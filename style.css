@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    width: 13%;
+    height: 100vh;
+    background-color: black;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+header li {
+    margin-bottom: 15px;
+    font-family: "Quicksand", sans-serif;
+}
+
+header svg {
+    fill: white;
+    height: 15px;
+    margin-right: 15px;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    width: 87%;
+    background-image: url(Images/img_9.jpg.webp);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+#Welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+#Welcome h1 {
+    font-weight: 400;
+    font-size: 64px;
+}
+
+#Welcome p {
+    width: 60%;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#contato {
+    display: inline-block;
+    width: 164px;
+    height: 53px;
+    background-color: #df0e62;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 53px;
+    color: white;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+}
+
+#fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    row-gap: 6px;
+}
+
+#fotos div {
+    width: 33%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#fotos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+#fotos svg {
+    fill: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.rosa{
+    color: #df0e62;
+}
+
+#fotos div:hover svg {
+    top: 50%;
+    opacity: 1;
+}
+
+#fotos div:hover img {
+    filter: brightness(50%);
+}
+
+#meio {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    padding: 120px;
+
+}
+
+#meio h1 {
+    font-weight: lighter;
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+
+
+}
+
+#meio img {
+    border-radius: 100px;
+    justify-content: center;
+    display: flex-end;
+    width: 160px;
+    height: 160px;
+}
+
+#meio h2 {
+    font-size: 16px;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+#meio p {
+    color: gray;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+}
+
+#biografia {
+    width: 100%;
+    height: 150vh;
+    background-color: #1a1a1a;
+    padding: 170px;
+
+
+}
+
+
+#biografia h1 {
+    color: white;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    font-size: 64px;
+    font-weight: lighter;
+}
+
+#biografia img {
+    width: 300px;
+    height: 300px;
+    ;
+}
+
+#biografia h2 {
+    font-weight: 500;
+    color: white;
+    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+}
+
+#biografia p {
+    color: #808080;
+    font-size: 19px;
+    font-family: "Quicksand", sans-serif;
+}
+
+#biografia h3 {
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+}
+
+
+#lista {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 70%;
+}
+
+
+.lista1 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    font-family: "Quicksand", sans-serif;
+    width: 50%;
+    padding: 0;
+    text-align: left;
+}
+
+.lista1 li {margin-bottom: 10px; }
+
+
+#lista svg {
+    fill: greenyellow;
+    width: 15px;
+    height: 20px;
+    vertical-align: middle;
+
+
+}
+
+.btn:hover{
+    color: #df0e62;
+}
+
+#blog{
+    
+    background-color: black;
+    width: 100%;
+    padding: 170px;
+    text-align: left;
+}
+
+#blog p {
+    margin: 16px;
+    color: #808080;
+    font-family: "Quicksand", sans-serif;
+}
+
+#blog h1{
+    font-weight: 500;
+    color: white;
+    margin-top: 24px;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;    
+}
+
+#blog img{
+    width: 250px;
+    height: 200px;
+
+}
+#blog h2{
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;    
+    color: white;
+    padding: 20px;
+ 
+}
+
+.blog1{
+   display: flex;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+#blog div{
+    color: white;
+    padding: 20px;
+}
+
+
+
+.espaco{
+    color: #808080;
+    padding: 10px;
+}
+
+#fundo_contact{
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    position: relative;
+    height: 150vh;
+    margin-top: 25%;
+    }
+    
+
+#contact_all{
+    position: relative;
+    top: 9%;
+    left: 14%;
+    display: flex;
+    flex-direction: column;
+    width: 77%; 
+}
+
+
+#titulo_contact{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 64px;
+    margin-bottom: 2%;
+    
+
+}
+
+
+#name{
+    display: flex;
+    flex-direction: row;
+    width: 75.5%;
+}
+
+#contact_all input{
+    border: none;
+    border-bottom: 2px solid gray;
+    border-radius: 0;
+    background: none;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 5px;
+    width: 75%;
+}
+
+
+#contact_all input:focus{
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+.texto_contact{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+    margin-top: 2%;
+    font-size: 23px;
+    margin-bottom: 3%;
+    font-weight: lighter;
+    
+}
+
+
+#espaço_contact{
+    margin-left: 30%;
+}
+
+
+#contact_all textarea{
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: transparent;
+    height: auto;
+    display: block;
+    font-size: medium;
+    color: white;
+}
+
+
+#contact_all textarea:focus{
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+
+#contactbtn {
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    border-radius: 30px;
+    background-color: #df0e62;
+    border-color: #df0e62;
+    color: white;
+    border: none;
+    line-height: 1.5;
+    margin-top: 5%;
+}
+
+#msgfinal {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #ffffff;
+    width: 95%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 4%;
+    letter-spacing: 1px;
+} 
+
+#message {
+    background-color: transparent;
+    font-size: 15px;
+}
